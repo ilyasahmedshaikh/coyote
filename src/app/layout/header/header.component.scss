@@ -1,0 +1,177 @@
+@import '../../../styles.scss';
+
+.header {
+  width: 100%;
+  height: 130vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-color: #444444;
+  .logo{
+    a{
+      font-weight: bold;
+      font-size: 19px;
+      color: $black;
+    }
+  }
+  .nav{
+    float: right;
+    @include respond(tablet){
+      display: none;
+    }
+    ul{
+      display: flex;
+      list-style: none;
+      li{
+        a{
+          border: 1px solid $white;
+          color: $lightBlack;
+          font-size: 13px;
+          padding: 7px 15px;
+          font-weight: 500;
+          cursor: pointer;
+          &:hover{
+            background-color: $white;
+            transition: 0.5s;
+            opacity: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  .toggleContainer {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    z-index: 3;
+  }
+
+  .bar1, .bar2, .bar3 {
+    border-radius: 10px;
+    width: 30px;
+    height: 3px;
+    background: $lightBlack;
+    margin: 6px 0;
+    transition: 0.5s;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .toggleContainer {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .toggleContainer {
+      display: block;
+    }
+  }
+}
+
+.change {
+  .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+      transform: rotate(-45deg) translate(-6px, 6px);
+      background: #dd6906;
+    }
+    .bar2 {opacity: 0;}
+    .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+      background: #dd6906;
+    }
+}
+
+.sidebar{
+  a {
+      text-decoration: none;
+      color: $white;
+      text-transform: capitalize;
+  }
+  ul {
+      list-style: none;
+      margin-bottom: 0;
+      padding-left: 0;
+      padding: 20% 0 0 5%;
+      height: 85vh;
+      max-height: 85vh;
+      overflow-y: auto;
+      @include respond(tablet) {
+        padding: 10% 0 0 5%;
+      }
+      @include respond(mobile) {
+        padding: 5% 0 0 5%;
+      }
+      li {
+          padding: 10px 0 10px 0;
+          a {
+              text-decoration: none;
+              color: $black;
+              font-size: 20px;
+              font-weight: 500;
+              transition: 0.3s;
+              &:hover {
+                  color: $black;
+              }
+          }
+      }
+  }
+  &.side {
+      position: fixed;
+      width: 30%;
+      background: $white;
+      color: $white;
+      right: -50%;
+      top: 0;
+      bottom: 0;
+      z-index: 16;
+      transition: 0.8s;
+      &.show{
+          left: 0;
+      }
+  }
+  &.flap {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      // background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+      color: $white;
+      top: -100%;
+      z-index: 1;
+      transition: 0.8s;
+      &.show{
+          top: 0;
+      }
+  }
+  .bottom-thing{
+      position: absolute;
+      bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar.side {
+      width: 100%;
+      left: -100%;
+      margin-top: 15%;
+  }
+}
+
+.fade-area {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  opacity: 0.5;
+  transition: 0.5s;
+  z-index: 1;
+  // &.show{
+  //     display: block;
+  // }
+}
