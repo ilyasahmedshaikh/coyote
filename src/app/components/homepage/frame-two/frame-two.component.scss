@@ -21,8 +21,8 @@
     height: 30vh;
   }
   h1{
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 45px;
+    font-family: 'Satisfy', cursive;
     text-align: center;
     color: $white;
     @include respond(mobile) {

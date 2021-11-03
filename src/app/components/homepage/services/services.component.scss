@@ -1,0 +1,39 @@
+@import "../../../../styles.scss";
+
+.services {
+  padding: 5% 0;
+  background-color: #fafafa;
+  @include respond(tablet) {
+  }
+  @include respond(mobile) {
+    padding: 10% 0;
+  }
+  @include respond(mobileM) {
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: $black;
+    @include respond(mobile) {
+      font-size: 35px;
+    }
+  }
+  h6 {
+    padding-top: 10px;
+    font-size: 30px;
+    color: #b5603f;
+    font-family: 'Satisfy', cursive;
+    @include respond(mobile) {
+      font-size: 30px;
+    }
+  }
+  .services-points {
+    @include respond(mobile) {
+      margin-top: 10%;
+    }
+    li {
+      font-size: 20px;
+      color: gray;
+    }
+  }
+}

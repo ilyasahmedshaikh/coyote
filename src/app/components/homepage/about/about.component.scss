@@ -45,6 +45,7 @@
       @include respond(tablet) {
         font-size: 28px;
         font-weight: 700;
+        text-align: center;
       }
     }
     p {
@@ -54,6 +55,7 @@
       @include respond(tablet) {
         font-size: 24px;
         padding-top: 10%;
+        text-align: center;
       }
     }
   }

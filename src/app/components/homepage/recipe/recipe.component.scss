@@ -1,0 +1,49 @@
+@import "../../../../styles.scss";
+
+.recipe {
+  padding: 7% 0;
+  background-color: #4e4a4a;
+  @include respond(mobile) {
+    padding: 5% 0 10% 0px;
+  }
+  .left {
+    padding-top: 10%;
+    h6 {
+      padding-top: 10px;
+      font-size: 35px;
+      color: $white;
+      font-family: 'Satisfy', cursive;
+      @include respond(mobile) {
+        font-size: 30px;
+      }
+    }
+    p {
+      padding-top: 15px;
+      color: $white;
+      font-size: 24px;
+      @include respond(mobile) {
+       font-size: 18px;
+      }
+    }
+  }
+  .right{
+    padding-top: 10%;
+    h6 {
+      padding-top: 10px;
+      font-size: 35px;
+      color: $white;
+      font-family: 'Satisfy', cursive;
+      @include respond(mobile) {
+        font-size: 30px;
+      }
+    }
+    p{
+      padding-top: 15px;
+      color: $white;
+      font-size: 24px;
+      @include respond(mobile) {
+        font-size: 18px;
+      }
+    }
+  }
+}
