@@ -4,12 +4,6 @@
   background-color: $white;
   padding: 5% 0;
   text-align: center;
-  @include respond(tablet) {
-  }
-  @include respond(mobile) {
-  }
-  @include respond(mobileM) {
-  }
   .information {
     h6 {
       font-family: "Satisfy", cursive;
@@ -53,6 +47,7 @@
         color: $gray;
         font-size: 20px;
         border-bottom-style: ridge;
+        cursor: pointer;
       }
     }
   }
