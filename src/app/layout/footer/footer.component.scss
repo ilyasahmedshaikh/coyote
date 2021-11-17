@@ -2,7 +2,7 @@
 
 .footer {
   background-color: $white;
-  padding: 5% 0;
+  padding: 1.875rem 0;
   text-align: center;
   @include respond(mobile){
     padding: 10% 0;
