@@ -27,6 +27,20 @@
       list-style: none;
       li{
         a{
+          color: $black;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 0 10px;
+          cursor: pointer;
+          &:hover{
+            transition: 0.5s;
+            opacity: 0.5s;
+            color: $gray;
+          }
+        }
+      }
+      .btn-login{
+        a{
           border: 1px solid $black;
           color: $black;
           font-size: 13px;
