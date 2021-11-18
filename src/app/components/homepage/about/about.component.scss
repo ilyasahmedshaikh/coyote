@@ -3,7 +3,7 @@
 .about {
   width: 100%;
   height: 135vh;
-  padding-top: 10%;
+  padding-top: 9.688rem;
   background: fixed;
   background-position: center;
   background-size: cover;
@@ -12,6 +12,7 @@
   background-color: #2a2a2a;
   @include respond(tablet) {
     height: 115vh;
+    padding-top: 0rem;
   }
   @include respond(mobile) {
     height: 140vh;
@@ -21,61 +22,60 @@
   }
   .about-logo {
     img {
-      width: 20rem;
+      width: 18.75rem;
       height: auto;
-      // border-radius: 50px;
       object-fit: cover;
       object-position: center;
       display: block;
       margin: auto;
       @include respond(tablet) {
-        margin-top: 10%;
+        margin-top: 4.375rem;
       }
       @include respond(mobile) {
-        margin-top: 15%;
-        width: 15rem;
+        margin-top: 5rem;
+        width: 16.875rem;
       }
     }
   }
   .info {
-    margin-top: 10%;
+    margin-top: 6.25rem;
     h4 {
-      font-size: 30px;
+      font-size: 1.875rem;
       font-weight: 800;
       color: $white;
       @include respond(tablet) {
-        font-size: 28px;
+        font-size: 1.75rem;
         font-weight: 700;
         text-align: center;
       }
     }
     p {
-      padding-top: 5%;
+      padding-top: 2.5rem;
       color: white;
-      font-size: 27px;
+      font-size: 1.688rem;
       @include respond(tablet) {
-        font-size: 24px;
-        padding-top: 10%;
+        font-size: 1.5rem;
+        padding-top: 2.375rem;
         text-align: center;
       }
     }
   }
-  .about-btn{
-    margin-top: 5%;
+  .about-btn {
+    margin-top: 3.125rem;
     @include respond(tablet) {
-      margin-top: 10%;
+      margin-top: 4.375rem;
     }
     @include respond(mobile) {
-      margin-top: 15%;
+      margin-top: 3.125rem;
     }
-    a{
-      border: 1px solid $white;
+    a {
+      border: 0.063rem solid $white;
       color: $white;
-      font-size: 14px;
-      padding: 10px 20px;
+      font-size: 0.875rem;
+      padding: 0.625rem 1.25rem;
       font-weight: 500;
       cursor: pointer;
-      &:hover{
+      &:hover {
         transition: 0.5s;
         opacity: 0.5s;
         background-color: $white;
