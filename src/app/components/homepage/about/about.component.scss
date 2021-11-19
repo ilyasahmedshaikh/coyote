@@ -83,4 +83,20 @@
       }
     }
   }
+  .customer-service{
+    a{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 100;
+      img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+        // border: 2px solid #f7f7f7;
+        // border-radius: 50px;
+      }
+    }
+  }
 }

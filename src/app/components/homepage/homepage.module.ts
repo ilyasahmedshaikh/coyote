@@ -11,6 +11,7 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { FrameOneComponent } from './frame-one/frame-one.component';
 import { FrameTwoComponent } from './frame-two/frame-two.component';
 import { FrameThreeComponent } from './frame-three/frame-three.component';
+import { BookYourCarComponent } from './book-your-car/book-your-car.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FrameThreeComponent } from './frame-three/frame-three.component';
     RecipeComponent,
     FrameOneComponent,
     FrameTwoComponent,
-    FrameThreeComponent
+    FrameThreeComponent,
+    BookYourCarComponent
   ],
   imports: [
     CommonModule,

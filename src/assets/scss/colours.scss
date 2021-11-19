@@ -1,6 +1,5 @@
 $default: linear-gradient(77deg,#f5286e,#fc6d43);
 $greenGradient: linear-gradient(270deg,#76e672 0,#41c83e 100%);
-$blackGradient: linear-gradient(77deg, #000000, #d5d5d5);
 
 $white: #ffffff;
 $black: #000000;
@@ -13,10 +12,6 @@ $gray: #78797a;
 
 .bg-green-gradient{
   background: $greenGradient;
-}
-
-.bg-black-gradient{
-  background: $blackGradient;
 }
 
 .text-pinkgradient {
